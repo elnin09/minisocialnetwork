@@ -18,7 +18,6 @@ $s1=$_SESSION['username'];
 if(isset($_POST['accept']))
 {
 echo $_POST['accept'];
-
 $s2= $_POST['accept'];
 $conn->query("insert into friends values('$s2','$s1')");
 $conn->query("insert into friends values('$s1','$s2')");

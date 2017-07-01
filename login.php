@@ -23,13 +23,13 @@ $row=$result->fetch_assoc();
 if($row)
 {session_start();
 $_SESSION['username'] = $_POST['username'];
-header("Refresh:0;URL=http://www.swapnildarmora.comlu.com/welcome.php");
+header("Refresh:0;URL=http://localhost/internproblemstatement/welcome.php");
 }
 else {echo "Sorry incorrect username or password" ;}
 }
 
 else if(isset($_POST['register']) ){ 
-$conn=new mysqli("mysql12.000webhost.com","a1703319_swapnil","elnino9");
+$conn=new mysqli("localhost","root","");
 $conn->query("use a1703319_swapnil");
 
 
@@ -46,7 +46,7 @@ $pass=$_POST['password'];
 
  $sql = "insert into login values('$name','$pass')";
  if ($conn->query($sql) === TRUE) {echo "Registerd successfully";
- header("Refresh:4;URL=http://www.swapnildarmora.comlu.com/index.html");
+ header("Refresh:4;URL=http://localhost/internproblemstatement/index.html");
     } 
     else {
     echo "Registration error.Try again with valid username" . $conn->error;

@@ -13,7 +13,7 @@ session_start();
 $_SESSION = array();
 
 session_destroy();
-header("Refresh:0;URL=http://www.swapnildarmora.comlu.com/index.html");
+header("Refresh:0;URL=http://localhost/internproblemstatement/index.html");
 ?>
 </body>
 </html>

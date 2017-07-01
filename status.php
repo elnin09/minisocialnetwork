@@ -16,7 +16,7 @@ $conn=new mysqli("localhost","root","");
 $conn->query("use a1703319_swapnil");
 $s1=$_SESSION['username'];
 $result=$conn->query("insert into status values('$s1','$status')");
-header("Refresh:0;URL=http://www.swapnildarmora.comlu.com/welcome.php");
+header("Refresh:0;URL=http://localhost/internproblemstatement/welcome.php");
 
 ?>
 </body>

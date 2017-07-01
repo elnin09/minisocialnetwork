@@ -48,9 +48,9 @@ echo"</div>";
 else {echo "<div>No friend requests</div>";}
 ?>
 
-<form id="formleft" action="http://www.swapnildarmora.comlu.com/request.php" method="post">
+<form id="formleft" action="http://localhost/internproblemstatement/request.php" method="post">
 <?php
-$conn=new mysqli("mysql12.000webhost.com","a1703319_swapnil","elnino9");
+$conn=new mysqli("localhost","root","");
 $conn->query("use a1703319_swapnil");
 $s1=$_SESSION['username'];
 $result=$conn->query("select distinct fname from request where sname='$s1'");
@@ -75,9 +75,9 @@ echo"</div>";
 
 ?>
 </form>
-<form id=formright action="http://www.swapnildarmora.comlu.com/addfriend.php" method="post">
+<form id=formright action="http://localhost/internproblemstatement/addfriend.php" method="post">
 <?php
-$conn=new mysqli("mysql12.000webhost.com","a1703319_swapnil","elnino9");
+$conn=new mysqli("localhost","root","");
 $conn->query("use a1703319_swapnil");
 $s1=$_SESSION['username'];
 $result=$conn->query("select distinct username from login where username not in(select sname from friends where fname='$s1')");
@@ -105,7 +105,7 @@ echo"</div>";
 ?>
 </form>
 <?php
-$conn=new mysqli("mysql12.000webhost.com","a1703319_swapnil","elnino9");
+$conn=new mysqli("localhost","root","");
 $conn->query("use a1703319_swapnil");
 $s1=$_SESSION['username'];
 $result=$conn->query("select distinct sname from request where fname='$s1'");

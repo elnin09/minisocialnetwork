@@ -22,7 +22,7 @@ echo $_POST['addfriend'];
 $s2= $_POST['addfriend'];
 
 $conn->query("insert into request values('$s1','$s2')");
-header("Refresh:0;URL=http://www.swapnildarmora.comlu.com/friends.php");
+header("Refresh:0;URL=http://localhost/internproblemstatement/friends.php");
 }
 ?>
 </body>
