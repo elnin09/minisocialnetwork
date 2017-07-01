@@ -12,7 +12,7 @@
 session_start();
 $status=$_POST['status'];
 
-$conn=new mysqli("mysql12.000webhost.com","a1703319_swapnil","elnino9");
+$conn=new mysqli("localhost","root","");
 $conn->query("use a1703319_swapnil");
 $s1=$_SESSION['username'];
 $result=$conn->query("insert into status values('$s1','$status')");

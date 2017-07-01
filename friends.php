@@ -14,19 +14,19 @@ session_start();
 
 <?php
 if($_SESSION['username']){
-$url="http://www.swapnildarmora.comlu.com/welcome.php";
+$url="http://localhost/internproblemstatement/welcome.php";
  echo "<a href=$url>"; 
  
  echo $_SESSION['username']; 
  echo "</a>";
  }
-else {header("Refresh:0;URL=http://www.swapnildarmora.comlu.com/index.html");} 
+else {header("Refresh:0;URL=http://localhost/internproblemstatement/index.html");} 
 ?>
-<form action="http://www.swapnildarmora.comlu.com/logout.php" method="post">
+<form action="http://localhost/internproblemstatement/logout.php" method="post">
 <button name="Logout" value="logout">Logout</button>
 </form>
 <?php
-$conn=new mysqli("mysql12.000webhost.com","a1703319_swapnil","elnino9");
+$conn=new mysqli("localhost","root","");
 $conn->query("use a1703319_swapnil");
 $s1=$_SESSION['username'];
 $result=$conn->query("select distinct sname from friends where fname='$s1'");

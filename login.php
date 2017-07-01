@@ -16,7 +16,7 @@ $name=$_POST['username'];
 $pass=$_POST['password'];
 session_start(); 
 
-$conn=new mysqli("mysql12.000webhost.com","a1703319_swapnil","elnino9");
+$conn=new mysqli("localhost","root","");
 $conn->query("use a1703319_swapnil");
 $result=$conn->query("select * from login where username='$name' AND password='$pass'");
 $row=$result->fetch_assoc();
