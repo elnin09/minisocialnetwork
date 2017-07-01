@@ -1,0 +1,31 @@
+So this ZIP file contains all the required files.
+
+To run this we can either use
+1)Localhost
+2)WEB SERVER(I have used "www.swapnildarmora.comlu.com") for this 
+
+HOW TO USE THESE FILES(on localhost)
+
+1)Install XAMPP and copy the extracted folder internproblemstatement in your C:>xampp\htdocs
+
+2)Modify the contents of all the file wherever mysql connection is used in given  php files
+  this needs to be replaced  $conn=new mysqli("mysql12.000webhost.com","a1703319_swapnil","elnino9");
+  by this $conn=new mysqli("localhost","user","password");   Note:(user=username of your sql and password is password )
+
+ 3)Modify all the links from say  "www.swapnildarmora.comlu.com/xyz.php" to "http://localhost/internproblemstatement/xyz.php" 
+and "www.swapnildarmora.comlu.com/xyz.html" to "http://localhost/internproblemstatement/xyz.html" 
+in the given php files and html files
+
+4)Run all the sql commands on your sql server  (provided in sql.txt file)
+
+5)Run from browser http://localhost/internproblemstatement
+
+HOW TO USE ON WEB SERVER
+
+ Copy all the files on your web server and make following changes in files and your sql database
+1)Modify mysql command mentioned in step 2 in previous(using on localhost) (use your server ,username and password in all the files)
+2)Modify all the links from say  "www.swapnildarmora.comlu.com/xyz.php" to "yourdomainname/xyz.php" 
+  and "www.swapnildarmora.comlu.com/xyz.html" to "yourdomainname/xyz.html" 
+   in the given php files and html files
+3)Run all sql commands on your sql server 
+

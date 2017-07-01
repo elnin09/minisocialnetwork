@@ -1,0 +1,13 @@
+SQL QUERIES TO CREATE DATABASE STRUCTURE REQUIRED
+
+create database use a1703319_swapnil;
+
+create table login( username varchar(30) primary key, password varchar(30));//login table 
+
+
+create table status(username varchar(30) ,text varchar(200)); // a table containing the status of all the persons along with their unique name
+
+create table friends(fname varchar(30), sname varchar(30)); // a table containing records of who are friends with whom
+
+create table request(fname varchar(30), sname varchar(30)); // if fname has send any request to sname then the values will be inserted in this table and when request is accepted in that case 
+

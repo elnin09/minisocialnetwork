@@ -1,0 +1,106 @@
+@charset "utf-8";
+body
+{background-image:url("6.jpg");
+background-size:100% 400%;
+color:red;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:34x;
+
+}
+echo{
+text-align:center;	
+	}
+em
+{font-size:24px;
+color:red;	
+	}
+h1
+{text-size:80px;
+	margin:auto;
+	background-color:#1e1e1e;
+	color:red;
+	}
+div{
+	margin:px 15px 15px 15px;
+	background:transparent;
+	text-align::center;
+	color:grey;
+	font-size:26px;
+	height:100%;
+	text-decoration:blink;
+	border:2px;
+	alignment-adjust:central;
+	}
+#form{
+	background-color:#1e1e1e;
+	opacity:0.7;
+	}
+form{
+	margin:0px 5px 15px 15px;
+	text-align::center;
+	color:red;
+	
+	font-size:36px;
+	text-decoration:blink;
+
+	alignment-adjust:central;
+	}
+	
+	formmiddle{
+	margin:0px 5px 15px 15px;
+	text-align::center;
+	color:red;
+	float:inherit;
+	font-size:36px;
+	text-decoration:blink;
+
+	alignment-adjust:central;
+	}
+	formright{
+	margin:0px 5px 15px 15px;
+	text-align::center;
+	color:red;
+	float:right;
+	font-size:36px;
+	text-decoration:blink;
+
+	alignment-adjust:central;
+	}
+	
+	
+	
+	input{
+		margin:15px 15px 15px 15px;
+	background-color:#1e1e1e;
+	text-align::center;
+	color:white;
+	font-size:36px;
+	
+	text-decoration:blink;
+	
+	alignment-adjust:central;
+	}
+	center{
+	color:red;
+	background-color:#1e1e1e;
+	opacity:0.8;
+	font-size:25px;
+	}
+	
+	
+	
+	a
+	{
+	margin:15px 15px 15px 25px;
+	background-color:black;
+	opacity:0.7;
+	text-align:center;
+	color:red;
+	font-size:24px;
+	
+	text-decoration:blink;
+	
+	}
+	
+	}/* CSS Document */
+

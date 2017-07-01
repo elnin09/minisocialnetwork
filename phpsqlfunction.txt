@@ -1,0 +1,47 @@
+FUNCTIONING OF ALL PHP FILES AND MYSQL STRUCTURE
+MYSQL STRUCTURE
+Four tables are used
+1)Login : contains login details username and password
+2)Status:contains username and text(status of person)
+3)Friends:contains fname and sname(where fname and sname are friends)
+4)Requests:contains fname and sname(fname has sent request to sname)
+
+1) LOGIN.PHP
+    Takes username and passoword as input and if login credentials are right then redirects to welcome.php. If login credentials wrong then redirects to welcome.php
+2)LOGOUT.PHP
+     It destroys session and redirects to home page that is index.html
+3)WELCOME.PHP
+  It has three links + one status + one news feed
+1)Three links: 1)name:clicking on username redirects to    welcome.php (can be used to refresh news feed).
+                       2)friends:redirects to friends.php
+                       3)logout:redirects to logout.php
+   2)Status:On clicking post  redirects to status.php 
+    3)News feed : PHP code runs that use status table to check the 
+                              status of friends.
+4)STATUS.PHP
+          Takes status as POST argument add the required things into
+           status table and redirects to welcome.php again
+5)FRIENDS.PHP
+     Contains four parts
+   1)Friends : A php code is written to get information of friends table 
+                        according to the current session.
+   2) REQUESTS:A php code to get information from request table
+                               It has two buttons accept or reject.On clicking  
+                               accept or reject request.php is called and it takes 
+                                 necessary steps.
+   3)Other Friends: A php code that contains all people who are not 
+                                 friends(limited to 20) along with a button add   
+                                   friend.On clicking add friend addfriend.php runs
+                                  and by doing neccessary things it again comes 
+                                   back to friends.php
+   4)Requests sent to: It show to whom we have sent requests
+
+6)REQUEST.PHP
+    It takes input as accept or reject along with the name who has sent 
+   request to currently logged in user(retrived using  current session)
+    and according to wether its accept or rejecet takes neccessary  
+    actions by making changes in friends and request table and then
+    redirects to friends.php
+
+7)ADDFRIEND.PHP
+It runs when add friend button is added and takes the person to whom request needs to be sent as input and makes neccessary changes in request and redirects to friends.php .  
